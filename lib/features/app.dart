@@ -17,8 +17,9 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.white,
           appBar: PreferredSize(
-            preferredSize: Size(double.infinity, 60),
+            preferredSize: Size(double.infinity, 55),
             child: MyAppBar(),
           ),
           body: SingleChildScrollView(child: AppBody()),
