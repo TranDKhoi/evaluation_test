@@ -13,9 +13,9 @@ class MyAppBar extends StatelessWidget {
         children: [
           //COMPANY LOGO
           Image.asset(
-            "assets/images/zens_logo.png",
-            width: size.width / 3,
-            height: size.height / 7,
+            "assets/images/logo.png",
+            width: size.width / 8,
+            height: size.height / 8,
           ),
           const Spacer(),
 

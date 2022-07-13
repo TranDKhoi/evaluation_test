@@ -42,7 +42,7 @@ class _AppBodyState extends State<AppBody> {
               //GREEN BANNER
               Container(
                 width: size.width,
-                height: size.height / 4,
+                height: size.height / 5,
                 decoration: const BoxDecoration(
                   color: Colors.green,
                 ),

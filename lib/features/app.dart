@@ -1,5 +1,6 @@
 import 'package:evaluation_test/features/widgets/appbar.dart';
 import 'package:evaluation_test/features/widgets/body.dart';
+import 'package:evaluation_test/features/widgets/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatefulWidget {
@@ -14,12 +15,15 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: Size(double.infinity, 60),
-          child: MyAppBar(),
+      home: SafeArea(
+        child: Scaffold(
+          appBar: PreferredSize(
+            preferredSize: Size(double.infinity, 60),
+            child: MyAppBar(),
+          ),
+          body: SingleChildScrollView(child: AppBody()),
+          bottomNavigationBar: MyBottomBar(),
         ),
-        body: SingleChildScrollView(child: AppBody()),
       ),
     );
   }
