@@ -1,5 +1,5 @@
-import 'package:evaluation_test/controllers/index_controller.dart';
-import 'package:evaluation_test/values/jokes.dart';
+import 'package:evaluation_test/app/controllers/index_controller.dart';
+import 'package:evaluation_test/app/controllers/joke_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -55,7 +55,8 @@ class _AppBodyState extends State<AppBody> {
               right: size.height / 20),
           child: Obx(
             () => Text(
-              jokeList[IndexController.ins.currentIndex.value],
+              JokeController
+                  .ins.joke[IndexController.ins.currentIndex.value].content!,
               style: TextStyle(
                   color: const Color(0xff7F7F7F),
                   fontSize: size.width / 28,

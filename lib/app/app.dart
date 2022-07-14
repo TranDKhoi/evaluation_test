@@ -1,7 +1,8 @@
-import 'package:evaluation_test/features/widgets/appbar.dart';
-import 'package:evaluation_test/features/widgets/body.dart';
-import 'package:evaluation_test/features/widgets/bottom_bar.dart';
 import 'package:flutter/material.dart';
+
+import 'features/home_screen/widgets/appbar.dart';
+import 'features/home_screen/widgets/body.dart';
+import 'features/home_screen/widgets/bottom_bar.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
